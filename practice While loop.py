@@ -251,7 +251,7 @@ while num <= 20:
     """
     
 #Initial Balance
-
+"""
 balance = 1000
 
 while True:
@@ -277,5 +277,127 @@ while True:
 
     else:
         print("Invalid")
+        
+"""
 
+#While with Continue
+"""
+num = 1
+while num <= 5:
+    if num == 3:
+        num += 1
+        continue
+    print(num)
+    num += 1
     
+"""
+"""
+num = 1
+while num <= 10:
+    if num%2==0:
+        num += 1
+        continue
+    print(num)
+    num += 1
+    
+    """
+    
+"""
+num = 1
+while num <= 10:
+    if num % 3 ==0:
+        num += 1
+        continue
+    print(num)
+    num += 1
+    """
+    
+#practice question
+
+"""
+num = 1
+while num <= 10:
+    if num == 5:
+        num += 1
+        continue
+    print(num)
+    num = num+1
+    
+"""
+
+#Practice 2
+"""
+num =1 
+while num <= 15:
+    if num%4==0:
+        num = num+1
+        continue
+    print(num)
+    num = num+1
+    
+"""
+
+#Practice 3
+"""
+count = 1
+
+while count <= 5:
+    num = int(input("Enter your input: "))
+
+    if num == 0:
+        print("Zero is skipped")
+        count += 1
+        continue
+
+    print("You entered:", num)
+    count += 1
+    
+    """
+#Practice 4
+"""
+num = 1
+while num <= 20:
+    if num % 2 == 0 or num % 3 == 0:
+        num += 1
+        continue
+    print(num)
+    num += 1
+    
+"""
+
+#mini challenge
+"""
+num = 1
+while num <= 30:
+    if num%3==0:
+        print("fizz")
+        num+=1
+        continue
+    if num%5==0:
+        print("Buzz")
+        num+=1
+        continue
+    print(num)
+    num+=1
+    """
+    
+#While-else
+"""
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
+else:
+    print("All numbers are printed")
+    
+        """
+        
+num =1
+while num <= 5:
+    if num == 3:
+        num +=1
+        break
+    print(num)
+    num += 1
+else:
+    print("Completed")
