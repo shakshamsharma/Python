@@ -392,6 +392,7 @@ else:
     
         """
         
+"""
 num =1
 while num <= 5:
     if num == 3:
@@ -401,3 +402,23 @@ while num <= 5:
     num += 1
 else:
     print("Completed")
+"""
+"""
+secret = "python"
+num = 1
+while num <= 3:
+    key = input("Enter the secret key: ")
+    if key == secret:
+        num+=1
+        print("access valid")
+        break
+    else:
+        print("Access denied")
+        
+"""
+        
+numbers = [5, 8, 12, 15, 18, 20]
+while numbers == 15:
+        print("Found")
+else:
+        print("not Found")
