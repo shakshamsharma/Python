@@ -417,8 +417,96 @@ while num <= 3:
         
 """
         
+"""
 numbers = [5, 8, 12, 15, 18, 20]
 while numbers == 15:
         print("Found")
 else:
         print("not Found")
+        
+        """
+        
+
+#Nested while
+"""
+i =1
+while i <= 2:
+    j =1
+    while j <=2:
+        print(i, j, end=" ")
+        j=j+1
+    print()
+    i =i+1
+    
+    """
+    
+"""
+    
+i = 1
+while i<=3:
+    j =1
+    while j <=3:
+        print("*", end=" ")
+        j=j+1
+    print()
+    i=i+1
+    
+    """
+    
+"""
+i =1
+while i<=4:
+    j=1
+    while j<=i:
+        print("*", end=" ")
+        j=j+1
+    print()
+    i+=1
+        
+    """
+    
+"""
+i =1
+while i<=4:
+    j=1
+    while j>=i:
+        print("*", end=" ")
+        j=j+1
+    print()
+    i+=1
+    """
+    
+"""
+i = 1
+while i <=5:
+    j = 1
+    while j<=i:
+        print(j, end=" ")
+        j=j+1
+        
+    print()
+    i=i+1
+    """
+    
+"""
+i =1
+while i<= 5:
+    j=1
+    while j<=i:
+        print(j,end=" ")
+        j=j+1
+    print()
+    i = i+1
+
+    """
+    
+i =1
+while i<=2:
+    j=1
+    while j<=2:
+        print("*", end=" ")
+        j=j+1
+        
+    print()
+    i=i+1
+    
