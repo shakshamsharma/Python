@@ -176,7 +176,7 @@ if name == name[::-1]:
 else:
     print("Not a palindrome number")
 
-"""
+
 
 sentence = input("Enter a sentence: ")
 vowel=0
@@ -194,6 +194,10 @@ for ch in sentence:
 print(vowel)
 print(digit)
 print(upper)
+
+"""
+
+
 
                 
 

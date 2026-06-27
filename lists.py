@@ -204,15 +204,3 @@ for student in students:
     
     """
     
-marks = [
-    [85, 90, 88],
-    [78, 92, 80],
-    [95, 87, 91]
-]
-for student in marks:
-    total = 0
-
-    for mark in student:
-        total += mark
-
-    print(total)

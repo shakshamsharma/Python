@@ -115,6 +115,7 @@ for key, value in student.items():
     """
     
 #Mini Challenge
+"""
 employee = {
     "name": "Saksham",
     "salary": 50000,
@@ -129,3 +130,5 @@ elif choice == 'Department':
     print(employee.get("department"))
 else:
     print("Invalid")
+    
+    """
