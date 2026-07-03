@@ -60,7 +60,6 @@ def is_positive(num):
 result = is_positive(10)
 print(result)
 
-"""
 
 #Mini Challenge
 def calculator(a, b, operation):
@@ -82,3 +81,4 @@ print(calculator(10, 5, "+"))
 print(calculator(10, 5, "-"))
 print(calculator(10, 5, "*"))
 print(calculator(10, 5, "/"))
+"""

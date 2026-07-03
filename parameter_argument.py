@@ -74,8 +74,8 @@ def operation(a,b):
     return a+b, a-b
 print(operation(10,20))
 
-"""
 
 def student(name, course="Python", duration="3 Months"):
     print(name, course, duration)
 student(name="Saksham")
+"""
