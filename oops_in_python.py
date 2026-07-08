@@ -62,7 +62,6 @@ dog2 = Dog("Julie")
 dog1.show_name()
 dog2.show_name()
         
-    """
     
 class Car():
     def __init__(self, name):
@@ -73,3 +72,26 @@ car1 = Car("BMW")
 car2 = Car("Mercedez")    
 car1.show_brand()
 car2.show_brand()
+
+
+
+#Mini Challenge
+
+class Mobile:
+    def __init__(self, brand, price):
+        self.brand = brand
+        self.price = price
+    def show_details(self):
+        print("Brand: ",self.brand)
+        print("Price: ",self.price)
+mobile1 = Mobile("Samsung", 50000)
+mobile2 = Mobile("Apple", 120000)
+mobile1.show_details()
+mobile2.show_details()
+
+"""
+
+class student:
+    def __init__(self):
+        print("Saksham the great")
+student1 = student()
