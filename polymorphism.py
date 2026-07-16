@@ -1,3 +1,5 @@
+#Polymorphism One thing can take many forms.
+#Same method name, different behavior depending on the object.
 """
 class Animal:
     def sound(self):
@@ -75,7 +77,7 @@ Employee = [Developer(), Designer(), Tester()]
 for employees in Employee:
     employees.work()
     """
-    
+"""
 #Practice 3
 class Notification:
     def send(self):
@@ -100,7 +102,7 @@ PushNotification1 = PushNotification()
 EmailNotification1.send()
 SMSNotification1.send()
 PushNotification1.send()
-
+"""
 """
 #Mini Challenge
 class Transport:
@@ -123,3 +125,4 @@ Transport = [Car(), Plane(), Boat()]
 for transports in Transport:
     transports.move()
     """
+    

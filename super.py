@@ -39,20 +39,24 @@ dev1 = Developer("Saksham","Python")
 print(dev1.name)
 print(dev1.language)
 
-"""
+
 
 #Mini Challenge
 class Account:
-    def show(self, owner):
+    def __init__(self, owner):
         self.owner = owner
+
+
 class SavingsAccount(Account):
-    def show(self, owner, balance):
-        super().show(owner)
-        self.balance = "Balance: ",balance
-        
-show = SavingsAccount("Saksham",5000)
-print(show.owner)
-print(show.balance)
-        
+    def __init__(self, owner, balance):
+        super().__init__(owner)
+        self.balance = balance
 
 
+show = SavingsAccount("Saksham", 5000)
+
+print("Owner:", show.owner)
+print("Balance:", show.balance)
+        
+
+"""

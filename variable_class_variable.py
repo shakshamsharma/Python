@@ -1,3 +1,8 @@
+#Instance Variables
+#These belong to one specific object.
+
+#Class Variables
+#These belong to the class itself and are shared by all objects.
 """
 class Student:
     School = 'ABC School'
@@ -12,7 +17,7 @@ print(student1.School)
 student2.show_name()
 print(student2.School)
 
-"""
+
 class Employee:
     Company = 'Microsoft'
     def __init__(self, name, salary):
@@ -29,7 +34,6 @@ employee2.show_name()
 print(employee2.Company)
 
 
-"""
 #Mini Challenge
 
 class Mobile:

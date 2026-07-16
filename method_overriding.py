@@ -34,7 +34,7 @@ dev1.work()
 class Animal:
     def Move(self):
         print("Animal Moving")
-class Bird:
+class Bird(Animal):
     def Move(self):
         print("Bird Moving")
         
@@ -45,7 +45,7 @@ bird1.Move()
 class Payment:
     def pay(self):
         print("Payment Processing")
-class Creditcard:
+class Creditcard(Payment):
     def pay(self):
         print("Credit Card Payment Processing")
 Creditcard1 = Creditcard()
@@ -56,13 +56,12 @@ Creditcard1.pay()
 class Notification:
     def send(self):
         print("Sending Notification")
-class EmailNotification:
+class EmailNotification(Notification):
     def send(self):
         print("Sending Email Notification")
 EmailNotification1 = EmailNotification()
 EmailNotification1.send()
 
-"""
 
 class Account:
     def info(self):
@@ -77,3 +76,4 @@ s1 = SavingAccount()
 c1 = CurrentAccount()
 s1.info()
 c1.info()
+"""

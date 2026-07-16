@@ -68,7 +68,7 @@ class Laptop(Device):
 lap1 = Laptop()
 lap1.power_on()
 lap1.code()
-"""
+
 
 class Vehicle:
     def start(self):
@@ -79,3 +79,4 @@ class Bike(Vehicle):
 bike1 = Bike()
 bike1.start()
 bike1.ride()
+"""

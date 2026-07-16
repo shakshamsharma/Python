@@ -101,6 +101,7 @@ emp.show_salary()
 """
 
 #Mini Challenge
+"""
 class ATM:
     def __init__(self):
         self.__balance = 10000
@@ -117,3 +118,4 @@ amount.deposit(5000)
 amount.show_balance()
 amount.withdraw(2000)
 amount.show_balance()
+"""

@@ -1,3 +1,5 @@
+#Abstraction → Hide implementation details
+#Show what to do, hide how it works.
 """
 from abc import ABC, abstractmethod
 class Animal(ABC):
@@ -108,13 +110,3 @@ account1 = CurrentAccount()
 account.withdraw()
 account1.withdraw()
 """
-class Animal(ABC):
-
-    @abstractmethod
-    def sound(self):
-        pass
-
-class Dog(Animal):
-    pass
-
-dog = Dog()
