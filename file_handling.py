@@ -88,12 +88,3 @@ print(file.write("Saksham The Great"))
 file.close()
 """
 
-#Mini Challange
-
-with open("notes.txt","x") as file:
-    print(file.write("Learn Python OOP"))
-    print(file.write("\nLearn File Handling"))
-    
-    
-
-    print(file.read())

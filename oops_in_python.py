@@ -91,7 +91,3 @@ mobile2.show_details()
 
 """
 
-class student:
-    def __init__(self):
-        print("Saksham the great")
-student1 = student()

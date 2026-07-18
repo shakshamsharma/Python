@@ -110,7 +110,7 @@ print(square)
 numbers = [1,2,3,4,5,6,7,8]
 evens = list(filter(lambda x: x%2==0, numbers))
 print(evens)
-"""
+
 
 students = [
     ("Saksham", 85),
@@ -124,3 +124,4 @@ find_marks = filter(lambda student: student[1]>85, students)
 print(highest)
 print(sorting)
 print(find_marks)
+"""
