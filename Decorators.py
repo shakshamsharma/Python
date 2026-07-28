@@ -93,3 +93,31 @@ def test():
 a = test()
 a()
 """
+
+
+"""
+def hello():
+    print("Hello")
+def run(func):
+        def inner():
+            print("Starting")
+            func()
+            print("Ending")
+        return inner
+
+hello = run(hello)
+
+hello()
+"""
+
+def run(func):
+    def inner():
+        print("Starting")
+        func()
+        print("Ending")
+    return inner
+
+@run
+def hello():
+    print("Hello")
+hello()
