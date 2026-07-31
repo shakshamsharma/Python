@@ -110,7 +110,93 @@ hello = run(hello)
 hello()
 """
 
+"""
 def run(func):
+    def inner():
+        print("Starting")
+        func()
+        print("Ending")
+    return inner
+    
+@run
+def hello():
+    print("Hello")
+hello()
+"""
+"""
+def run(func):
+    def inner(a,b):
+        print("Starting")
+        func(a,b)
+        print("Ending")
+    return inner
+
+@run
+def add(a, b):
+    print(a + b)
+add(10, 20)
+"""
+"""
+def run(func):
+    def inner(*args):
+        print("Starting")
+        func(*args)
+        print("Ending")
+    return inner
+
+@run
+def add(a, b, c):
+    print(a + b + c)
+add(10, 20, 30)
+"""
+
+"""
+def zoo(bie):
+    def inner(*args):
+        print("Starting")
+        bie(*args)
+        print("Ending")
+    return inner 
+
+@zoo
+def hello(a,b,c):
+    print(a*b*c)
+hello(10,20,30)
+"""
+"""
+def show(*args):
+    print(args)
+
+show(1, 2)
+show()
+show("A")
+"""
+
+"""
+def student(**kwargs):
+    print(kwargs)
+student(name = "Saksham", age = "21")
+"""
+
+"""
+def student(func):
+    def inner(*args, **kwargs):
+        print("Starting")
+        result = func(*args, **kwargs)
+        print("Ending")
+        return result
+    return inner
+@student
+def hello(name, age):
+    print(name)
+    print(age)
+hello("Saksham", 21)
+"""
+
+"""
+from functools import wraps
+def run(func):
+    @wraps(func)
     def inner():
         print("Starting")
         func()
@@ -119,5 +205,23 @@ def run(func):
 
 @run
 def hello():
-    print("Hello")
+    print("Saksham")
 hello()
+"""
+
+"""
+from functools import wraps
+def repeat(times):
+    def decorators(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            for i in range(times):
+                func(*args, **kwargs)
+        return wrapper
+    return decorators
+
+@repeat(3)
+def hello():
+    print("Saksham")
+hello()
+"""
