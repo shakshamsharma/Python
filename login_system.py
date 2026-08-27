@@ -1,3 +1,4 @@
+"""
 logged_in = True
 
 def profile():
@@ -21,3 +22,23 @@ def setting():
 profile()
 orders()
 setting()
+"""
+
+
+from functools import wraps
+logged_in = True
+def login_required(func):
+    @wraps(func)
+    def wrapper():
+        if logged_in:
+            func()
+        else:
+            print("Please login first")
+    return wrapper
+
+@login_required
+def profile():
+    print("Welcome to your profile")
+
+profile()
+        
