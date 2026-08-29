@@ -76,10 +76,173 @@ def reverse(text):
 print(reverse("python"))
 """
 
-def largest_number(number):
-    largest = number[0]
-    for num in number:
-        if num > largest:
-            largest = num
-    return largest
-print(largest_number([1,2,7,8,5,95]))
+#Practice - 10
+"""
+vowel = "banana"
+count = 0
+for vow in vowel:
+    if vow in 'aeiou':
+        count+=1
+print(count)
+"""
+
+#Practice - 11
+"""
+def count_vowel(vowel):
+    count = 0
+    for vow in vowel:
+        if vow in 'aeiou':
+            count += 1
+    return count
+print(count_vowel("Banana"))
+"""
+
+#Practice - 12
+"""
+text = "AeIu"
+for char in text:
+    if char.lower() in 'aeiou':
+        print(char)
+"""
+
+#Practice - 13
+"""
+text = "AeIu"
+for char in text:
+    if char in 'aeiouAEIOU':
+        print(char)
+"""
+
+#Practice - 14
+"""
+number = [-1,-2,-3,8,-9,4]
+total = 0
+for num in number:
+    if num > 0:
+        total = num + total
+print(total)
+"""
+
+#Practice - 15
+"""
+def count_positive(numbers):
+    total = 0
+    for num in numbers:
+        if num > 0:
+            total = num + total
+    return total
+print(count_positive([1,-2,5,-8,9]))
+"""
+
+#Practice - 16
+"""
+numbers = [8, 3, 10, 2, 6]
+smallest_number = min(numbers)
+print(smallest_number)
+"""
+
+#Practice - 17
+"""
+number = [8,4,3,7,5,2]
+smallest = number[0]
+for num in number:
+    if num < smallest:
+        smallest = num
+print(smallest)
+"""
+
+#Practice - 18
+"""
+def smallest_num(numbers):
+    smallest = numbers[0]
+    for num in numbers:
+        if num < smallest:
+            smallest = num
+    return smallest
+print(smallest_num([4,3,6,8,9]))
+"""
+
+#Practice - 19
+"""
+numbers = [-1,-2,-3,-4,5,6]
+count = 0
+for num in numbers:
+    if num > 0:
+        count = count + 1
+print(count)
+"""
+
+#Practice - 20
+"""
+def count_postive(numbers):
+    count = 0
+    for num in numbers:
+        if num > 0:
+            count = count + 1
+    return count
+print(count_postive([-1,2,3,4,-6,7]))
+"""
+
+#practice - 21
+"""
+number = [1,3,5,7,8,9,10]
+count = 0
+for num in number:
+    if num%2==0:
+        count = count + 1
+print(count)
+"""
+
+#Practice - 22
+"""
+def first_even_number(numbers):
+    for num in numbers:
+        if num%2==0:
+            return num
+print(first_even_number([1,3,5,8,9,10]))
+"""
+
+#Practice - 23
+"""
+def count_text(text):
+    count = 0
+    for char in text:
+        if char == 'a':
+            count+=1
+    return count
+print(count_text("Banana"))
+"""
+
+#Practice - 24
+"""
+def count_character(text):
+    count = 0
+    for char in text:
+        count+=1
+    return count
+print(count_character("banana"))
+"""
+
+#Practice - 25
+"""
+def first_character(text):
+    for char in text:
+        return char
+print(first_character("Python"))
+"""
+
+#Practice - 26
+"""
+text = "Python"
+count = 0
+for char in text:
+    count += 1
+    if count == 2:
+        print(char)
+"""
+
+
+    
+    
+    
+    
