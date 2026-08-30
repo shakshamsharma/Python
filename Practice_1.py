@@ -241,8 +241,136 @@ for char in text:
         print(char)
 """
 
+#Practice - 27
+"""
+numbers = [1, 4, 7, 8, 11, 12, 15]
+count = 0
+for num in numbers:
+    if num%2!=0:
+        count += 1
+print(count)
+"""
+
+#Practice - 28
+"""
+numbers = [1, 2, 4, 7, 10, 13, 16]
+total = 0
+for num in numbers:
+    total = total + num
+print(total)
+"""
+
+#Practice - 29
+"""
+numbers = [1, 2, 4, 7, 10, 13, 16]
+total = 0
+for num in numbers:
+    if num%2==0:
+        total = total + num
+print(total)
+"""
+
+#Practice - 30
+"""
+numbers = [4, 12, 7, 15, 20, 3, 11]
+count = 0
+for num in numbers:
+    if num > 10:
+        count=count+1
+print(count)
+"""
+
+#Practice - 31
+#find the smallest positive number
+"""
+def smallest_positive_number(numbers):
+    smallest = None
+    for num in numbers:
+        if num > 0 and (smallest is None or num < smallest):
+            smallest = num
+    return smallest
+print(smallest_positive_number([1,-4,-2,7,2,-9]))
+"""
+
+#Practice - 32
+#Biggest Even number
+"""
+def biggest_even_number(numbers):
+    largest = None
+    for num in numbers:
+        if num%2!=0:
+            continue
+        if largest is None or num > largest:
+            largest = num
+    return largest
+print(biggest_even_number([1,5,3,7,3,14]))
+"""
+
+#Practice - 33
+#Calculate Average
+"""
+def average_number(numbers):
+    total = 0
+    count = 0
+    for num in numbers:
+        total = total + num
+        count = count + 1
+        average = total/count
+    return average
+print(average_number([10,20,30,40,50,60,70]))
+"""
+
+#Practice - 34
+#Count Uppercase Characters
+"""
+def upperCase(text):
+    count = 0
+    for char in text:
+        if char.isupper():
+            count+=1
+    return count
+print(upperCase("PyThOn"))
+"""
+
+#Practice - 35
+#Count Digits
+"""
+def count_digit(text):
+    count = 0
+    for digit in text:
+        if digit.isdigit():
+            count+=1
+    return count
+print(count_digit("Python123Code45"))
+"""
+
+#Practice - 36
+#Remove Duplicates
+"""
+numbers = [1, 2, 2, 3, 4, 3, 5, 1]
+unique = []
+for num in numbers:
+    if num not in unique:
+        unique.append(num)
+print(unique)
+"""
+
+
+#Practice - 37
+#Second Largest Number
+"""
+def second_largest(numbers):
+    largest = numbers[0]
+    second = None
+    for num in numbers:
+        if num > largest:
+            largest = num
+        elif second is None or num > second:
+            second = num
+    return second
+print(second_largest([10, 5, 8, 20, 15]))
+"""
+
 
     
-    
-    
-    
+
