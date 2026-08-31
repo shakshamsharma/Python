@@ -372,5 +372,174 @@ print(second_largest([10, 5, 8, 20, 15]))
 """
 
 
-    
+#Practice - 38
+"""
+receipts = [
+    {"merchant": "Amazon", "amount": "129.99"},
+    {"merchant": "Walmart", "amount": "85.00"},
+    {"merchant": "Amazon", "amount": "49.50"},
+    {"merchant": "Target", "amount": "200.00"}
+]
+total = 0
+for receipt in receipts:
+    total += float(receipt["amount"])
+print(total)
+"""
 
+#Practice - 39
+"""
+receipts = [
+    {"merchant": "Amazon", "amount": "129.99"},
+    {"merchant": "Walmart", "amount": "85.00"},
+    {"merchant": "Amazon", "amount": "49.50"},
+    {"merchant": "Target", "amount": "200.00"}
+]
+total = 0
+for receipt in receipts:
+    if receipt["merchant"] == "Amazon":
+        total += float(receipt["amount"])
+print(total)
+"""
+
+#Practice - 40
+"""
+receipts = [
+    {"merchant": "Amazon", "amount": "129.99"},
+    {"merchant": "Walmart", "amount": "85.00"},
+    {"merchant": "Amazon", "amount": "49.50"},
+    {"merchant": "Target", "amount": "200.00"},
+    {"merchant": "Walmart", "amount": "15.00"}
+]
+total = {}
+for receipt in receipts:
+    merchant = receipt["merchant"]
+    amount = float(receipt["amount"])
+    if merchant not in total:
+        total[merchant]=0
+        total[merchant] += amount
+print(total)
+"""
+
+#Practice - 41
+#Sum of Odd Numbers
+"""
+numbers = [2, 5, 7, 10, 13, 16, 21]
+total = 0
+for num in numbers:
+    if num%2!=0:
+        total = total + num
+print(total)
+"""
+
+#Practice - 42
+#Find the First Negative Number
+"""
+def first_negative(numbers):
+    for num in numbers:
+          if num < 0:
+            return num
+print(first_negative([5, 8, 3, -2, 7, -9]))
+"""
+
+#Practice - 43
+#Count Numbers Greater Than Average
+"""
+def count_number(numbers):
+    total = 0
+    count = 0
+    count_greater =0
+    for num in numbers:
+        total = total + num
+        count+=1
+    average = total/count
+    for num in numbers:
+        if num > average:
+            count_greater+=1
+    return count_greater
+print(count_number([10, 20, 30, 40, 50]))
+"""
+
+#Practice - 44
+#Separate Positive and Negative Numbers
+"""
+numbers = [-3, 5, -8, 10, 2, -1, 7]
+positive = []
+negative = []
+for num in numbers:
+    if num > 0:
+        positive.append(num)
+    elif num < 0:
+        negative.append(num)
+print(positive)
+print(negative)
+"""
+
+#Practice - 45
+#Find the Longest Word
+"""
+words = ["cat", "elephant", "dog", "butterfly", "ant"]
+longest = words[0]
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+print(longest)
+"""
+
+#Practice - 46
+#Count Words Starting With a Specific Letter
+"""
+words = ["apple", "banana", "avocado", "grape", "apricot", "mango"]
+count = 0
+for word in words:
+    if word[0] == 'a':
+        count+=1
+print(count)
+"""
+
+#Practice - 47
+#Create a List of Even Numbers
+"""
+numbers = [1, 4, 7, 8, 11, 12, 15, 20]
+even = []
+for num in numbers:
+    if num%2==0:
+        even.append(num)
+print(even)
+"""
+
+#Practice - 49
+#Replace Negative Numbers With 0
+"""
+numbers = [5, -2, 8, -7, 3, -1, 10]
+result = []
+for num in numbers:
+    if num < 0:
+        result.append(0)
+    else:
+        result.append(num)
+print(result)
+"""
+
+#Practice - 50
+#Count Vowels in Each Word
+"""
+words = ["apple", "banana", "grape"]
+for word in words:
+    count = 0
+    for char in word:
+        if char in 'aeiouAEIOU':
+            count+=1
+    print(word, count)
+"""
+
+#Practice - 51
+#Find Common Elements
+"""
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 5, 7, 9, 2]
+common = []
+for num in list1:
+        if num in list2:
+            common.append(num)
+print(common)
+"""
