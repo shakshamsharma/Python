@@ -543,3 +543,183 @@ for num in list1:
             common.append(num)
 print(common)
 """
+
+#Practice - 52
+#Count numbers divisible by 3
+"""
+numbers = [3, 7, 9, 12, 14, 18, 20]
+count = 0
+for num in numbers:
+    if num%3==0:
+        count+=1
+print(count)
+"""
+
+#Practice - 53
+#Find the smallest number
+"""
+numbers = [8, 3, 12, 5, 1, 9]
+smallest = numbers[0]
+for num in numbers:
+    if num < smallest:
+        smallest = num
+print(smallest)
+"""
+
+#Practice - 54
+#Create a list of numbers greater than 10
+"""
+numbers = [4, 15, 7, 22, 9, 18, 3]
+result = []
+for num in numbers:
+    if num > 10:
+        result.append(num)
+print(result)
+"""
+
+#Practice - 55
+#Count vowels in a string
+"""
+text = "Programming"
+count = 0
+for char in text:
+    if char in 'aeiouAEIOU':
+        count+=1
+print(count)
+"""
+
+#Practice - 56
+#Find the first even number
+"""
+def even_number(numbers):
+    for num in numbers:
+        if num%2==0:
+            return num
+print(even_number([3, 7, 11, 9, 14, 20, 8]))
+"""
+
+#Practice - 56
+#Find the first even number
+"""
+numbers = [3, 7, 11, 9, 14, 20, 8]
+for num in numbers:
+    if num%2==0:
+        break
+        print(num)
+"""
+
+#Practice - 57
+#Find the sum of numbers greater than 10
+"""
+numbers = [4, 15, 7, 22, 9, 18, 3]
+total = 0
+for num in numbers:
+    if num > 10:
+        total = total + num
+print(total)
+"""
+
+#Practice - 58
+#Find the longest word's length
+"""
+words = ["cat", "elephant", "dog", "butterfly"]
+largest = len(words[0])
+for word in words:
+    if len(word) > largest:
+        largest = len(word)
+print(largest)
+"""
+
+#Practice - 59
+#Count numbers between 5 and 15
+"""
+numbers = [2, 5, 8, 12, 16, 7, 20, 14, 3]
+count = 0
+for num in numbers:
+    if num >= 5 and num <= 15:
+        count+=1
+print(count)
+"""
+
+#Practice - 60
+#Find the second smallest number
+"""
+numbers = [8, 3, 12, 5, 1, 9]
+smallest = numbers[0]
+second = None
+for num in numbers:
+    if num < smallest:
+        second = smallest
+        smallest = num
+    elif second is None or num < second:
+        second = num
+print(second)
+"""
+
+#Practice - 61
+#Find duplicate numbers
+"""
+numbers = [1, 2, 3, 2, 4, 5, 3, 6, 1]
+seen = []
+duplicate = []
+for num in numbers:
+    if num not in seen:
+        seen.append(num)
+    else:
+        duplicate.append(num)
+print(duplicate)
+"""
+
+#Practice - 62
+"""
+receipts = [
+    {"merchant": "Amazon", "amount": "129.99"},
+    {"merchant": "Walmart", "amount": "85.00"},
+    {"merchant": "Amazon", "amount": ""},
+    {"merchant": "Target", "amount": "200.00"},
+    {"merchant": "Amazon", "amount": "49.50"}
+]
+new_list = []
+for receipt in receipts:
+    if receipt["merchant"] == "Amazon" and receipt["amount"] != "":
+        new_list.append(receipt)
+print(new_list)
+"""
+
+#Practice - 63
+#Handle missing values
+"""
+receipts = [
+    {"merchant": "Amazon", "amount": "129.99"},
+    {"merchant": "Walmart", "amount": None},
+    {"merchant": "Target", "amount": "200.00"},
+    {"merchant": "Amazon", "amount": None},
+    {"merchant": "Nike", "amount": "150.00"}
+]
+total = 0
+for receipt in receipts:
+    if receipt["amount"] is not None:
+        total += float(receipt["amount"]) 
+print(total)
+"""
+
+#Practice - 64
+"""
+receipts = [
+    {"merchant": "amazon", "amount": "129.99"},
+    {"merchant": "WALMART", "amount": "85.00"},
+    {"merchant": "Target", "amount": "200.00"}
+]
+cleaned = []
+for receipt in receipts:
+    merchant = receipt["merchant"].title()
+    amount = float(receipt["amount"])
+    cleaned_receipt = {
+    "merchant": merchant,
+    "amount": amount
+}
+    cleaned.append(cleaned_receipt)
+    print(cleaned)
+"""
+
+#Practice - 65
