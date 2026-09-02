@@ -723,3 +723,154 @@ for receipt in receipts:
 """
 
 #Practice - 65
+#Find the sum of positive numbers
+"""
+numbers = [-5, 8, -2, 3, -1, 10, 2]
+total = 0
+for num in numbers:
+    if num > 0:
+        total = total + num
+print(total)
+"""
+
+#Practice - 66
+#Count numbers less than 10
+"""
+numbers = [4, 12, 7, 15, 2, 18, 9]
+count = 0
+for num in numbers:
+    if num < 10:
+        count+=1
+print(count)
+"""
+
+#Practice - 67
+#Create a list of odd numbers
+"""
+numbers = [2, 5, 8, 11, 14, 17, 20]
+new_list = []
+for num in numbers:
+    if num%2!=0:
+        new_list.append(num)
+print(new_list)
+"""
+
+
+#Practice - 68
+#Find the Most Frequent Number
+"""
+numbers = [1, 2, 2, 3, 1, 2, 4, 2]
+
+frequency = {}
+
+# Step 1: Count how many times each number appears
+for num in numbers:
+
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+
+# Step 2: Find the number with the highest frequency
+most_frequent = None
+highest_count = 0
+
+for num in frequency:
+
+    if frequency[num] > highest_count:
+        most_frequent = num
+        highest_count = frequency[num]
+
+print(most_frequent)
+"""
+
+
+#Practice - 69
+#Remove all vowels from a string
+"""
+text = "Programming"
+result = ""
+for char in text:
+    if char not in 'aeiouAEIOU':
+        result += char
+print(result)
+"""
+
+#Practice - 70
+#Find the first character that appears twice
+"""
+
+text = "programming"
+seen = []
+for char in text:
+    if char in seen:
+        print(char)
+        break
+    else:
+        seen.append(char)
+"""
+
+#Practice - 71
+#Reverse a list without using [::-1]
+"""
+numbers = [1, 2, 3, 4, 5]
+reverse_list = []
+for num in numbers:
+    reverse_list.insert(0, num)
+print(reverse_list)
+"""
+
+
+#Practice - 72
+#Remove duplicate elements while preserving order
+"""
+numbers = [1, 2, 2, 3, 1, 4, 3, 5]
+duplicate = []
+for num in numbers:
+    if num not in duplicate:
+        duplicate.append(num)
+print(duplicate)
+"""
+
+
+#Practice - 73
+#Find the number closest to zero
+"""
+numbers = [-8, 3, -2, 7, -1, 5]
+closest = numbers[0]
+for num in numbers:
+    if abs(num) < abs(closest):
+        closest = num
+print(closest)
+"""
+
+
+#Practice - 74
+#Check whether a list is sorted in ascending order
+"""
+numbers = [1, 3, 5, 7, 9]
+is_sorted = True
+for i in range(len(numbers) -1):
+    if numbers[i] > numbers[i+1]:
+        is_sorted = False
+        break
+print(is_sorted)
+"""
+
+#Practice - 75
+"""
+import re
+email = """
+#Thank you for your purchase from Amazon.
+#Order ID: AMZ-847291
+#Total: $129.99
+"""
+result = {}
+merchant = re.search(r"purchase from ([A-Za-z]+)", email)
+order = re.search(r"AMZ-(\d{6})", email)
+total = re.search(r"\$(\d+\.\d{2})", email)
+result["merchant"] = merchant.group(1)
+result["order"] = order.group(1)
+result["total"] = float(total.group(1))
+print(result)
+"""
