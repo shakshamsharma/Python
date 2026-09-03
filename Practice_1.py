@@ -874,3 +874,140 @@ result["order"] = order.group(1)
 result["total"] = float(total.group(1))
 print(result)
 """
+
+#Practice - 76
+#Find the largest even number
+"""
+numbers = [3, 8, 5, 12, 7, 10, 15, 6]
+largest = numbers[0]
+for num in numbers:
+    if num%2==0 and num > largest:
+        largest = num
+print(largest)
+"""
+
+#Practice - 77
+#Find the smallest positive number
+"""
+numbers = [-5, 8, -2, 3, -1, 10, 2]
+smallest = None
+for num in numbers:
+    if num > 0 and smallest is None:
+        smallest = num
+    elif num > 0 and num < smallest:
+        smallest = num
+print(smallest)
+"""
+
+#Practice - 78
+#Count words longer than 5 characters
+"""
+words = ["cat", "elephant", "dog", "butterfly", "apple", "computer"]
+count = 0
+for char in words:
+    if len(char) > 5:
+        count+=1
+print(count)
+"""
+
+#Practice - 79
+#Find the first number greater than the average
+"""
+numbers = [10, 20, 30, 40, 50]
+total = 0
+count = 0
+for num in numbers:
+    count+=1
+    total = total+num
+average = total/count
+for num in numbers:
+    if num>average:
+        print(num)
+        break
+"""
+
+#Practice - 80
+#Find the longest word that starts with "a"
+"""
+words = ["apple", "banana", "avocado", "grape", "apricot", "ant"]
+longest = ""
+for word in words:
+    if word[0] == 'a' and len(word) > len(longest):
+        longest = word
+print(longest)
+"""
+
+
+#Practice - 81
+#Count the frequency of each character
+"""
+text = "banana"
+frequency = {}
+for char in text:
+    if char in frequency:
+        frequency[char] += 1
+    else:
+        frequency[char] = 1
+print(frequency)
+"""
+
+#Practice = 82
+#Find the first non-repeating character
+"""
+text = "swiss"
+frequency = {}
+for char in text:
+    if char in frequency:
+        frequency[char]+=1
+    else:
+        frequency[char]=1
+for char in text:
+    if frequency[char]==1:
+        print(char)
+        break
+"""
+
+#Practice - 83
+#Find the common characters between two strings
+"""
+text1 = "hello"
+text2 = "world"
+common = []
+for char in text1:
+    if char in text2:
+        if char not in common:
+            common.append(char)
+print(common)
+"""
+
+#Practice - 84
+#Count the number of words containing the letter "a"
+"""
+words = ["apple", "dog", "banana", "cat", "elephant"]
+count = 0
+for word in words:
+        if 'a' in word:
+            count+=1
+print(count)
+"""
+
+#Practice - 85
+#Find the longest consecutive increasing sequence
+"""
+numbers = [1, 2, 3, 2, 4, 5, 6, 1]
+
+current = 1
+longest = 1
+
+for i in range(1, len(numbers)):
+
+    if numbers[i] > numbers[i - 1]:
+        current += 1
+    else:
+        current = 1
+
+    if current > longest:
+        longest = current
+
+print(longest)
+"""
