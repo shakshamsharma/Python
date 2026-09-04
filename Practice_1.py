@@ -1011,3 +1011,249 @@ for i in range(1, len(numbers)):
 
 print(longest)
 """
+
+
+#Practice - 86
+#Find the largest odd number
+"""
+numbers = [4, 7, 12, 9, 15, 20, 3]
+largest = 0
+for num in numbers:
+    if num%2!=0 and num > largest:
+        largest = num
+print(largest)
+"""
+
+#Practice - 87
+#Find the smallest even number
+"""
+numbers = [13, 8, 21, 4, 16, 7, 10]
+smallest = None
+for num in numbers:
+    if num%2==0:
+        if smallest is None or num < smallest:
+            smallest = num
+print(smallest)
+"""
+
+#Practice - 88
+#Count numbers greater than 10
+"""
+numbers = [4, 15, 8, 22, 11, 3, 17]
+count = 0
+for num in numbers:
+    if num > 10:
+        count+=1
+print(count)
+"""
+
+#Practice - 89
+#Create a list of numbers divisible by 3
+"""
+numbers = [4, 9, 12, 7, 15, 20, 18, 5]
+result = []
+for num in numbers:
+    if num%3==0:
+        result.append(num)
+print(result)
+"""
+
+#Practice - 90
+#Find the first number divisible by 5
+"""
+numbers = [7, 11, 13, 18, 25, 30, 40]
+for num in numbers:
+    if num%5==0:
+        print(num)
+        break
+"""
+
+#Practice - 91
+#Find the sum of all even numbers
+"""
+numbers = [3, 8, 11, 14, 6, 9, 20]
+total = 0
+for num in numbers:
+    if num%2==0:
+        total = total + num
+print(total)
+"""
+
+#Practice - 92
+#Find the longest word that starts with "a"
+"""
+words = ["apple", "cat", "avocado", "banana", "ant", "apricot"]
+longest = ""
+for word in words:
+    if word[0] == 'a':
+        if len(word) > len(longest):
+            longest = word
+print(longest)
+"""
+
+#Practice - 93
+#Remove all negative numbers from a list
+"""
+numbers = [5, -2, 8, -7, 10, -1, 3]
+positive = []
+for num in numbers:
+    if num > 0:
+        positive.append(num)
+print(positive)
+"""
+
+#Practice - 94
+#Count the frequency of each number
+"""
+numbers = [2, 3, 2, 5, 3, 2, 4, 5]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+print(frequency)
+"""
+
+#Practice - 95
+#Find the first non-repeating number
+"""
+numbers = [4, 2, 7, 2, 4, 9, 7, 5]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+for num in numbers:
+    if frequency[num]==1:
+        print(num)
+        break
+"""
+
+#Practice - 96
+#Find the second largest number
+"""
+numbers = [10, 5, 8, 20, 15, 20, 3]
+largest = numbers[0]
+second_largest = None
+for num in numbers:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif second_largest is None or(num > second_largest and num!=largest):
+        second_largest = num
+print(second_largest)
+"""
+
+#Practice - 97
+#Find the smallest positive number
+"""
+numbers = [-10, 5, -3, 8, 2, -1, 7]
+smallest_positive = None
+for num in numbers:
+    if num > 0 and (smallest_positive is None or num < smallest_positive):
+        smallest_positive = num
+print(smallest_positive)
+"""
+
+#Practice - 98
+#Find the longest word in a list
+"""
+words = ["cat", "elephant", "dog", "butterfly", "ant"]
+longest_word = ""
+for word in words:
+    if len(word) > len(longest_word):
+        longest_word = word
+print(longest_word)
+"""
+
+#Practice - 99
+#Find the first number that is greater than the average
+"""
+numbers = [5, 10, 15, 20, 25, 30]
+total = 0
+count = 0
+greater_than_average = 0
+for num in numbers:
+    total = total+num
+    count+=1
+    average = total/count
+for num in numbers:
+    if num > average:
+        print(num)
+        break
+"""
+
+#Practice - 100
+#Count how many words contain the letter "e"
+"""
+words = ["apple", "banana", "elephant", "dog", "tree", "cat"]
+count=0
+for word in words:
+    if 'e' in word:
+        count+=1
+print(count)
+"""
+
+#Practice - 101
+#Remove duplicate numbers while preserving their original order
+"""
+numbers = [4, 2, 4, 7, 2, 9, 7, 5]
+result = []
+for num in numbers:
+    if num not in result:
+        result.append(num)
+print(result)
+"""
+
+#Practice - 102
+#Find the number closest to zero
+"""
+numbers = [-8, 3, -2, 7, -1, 5]
+closest = numbers[0]
+for num in numbers:
+    if abs(num) < abs(closest):
+        closest = num
+print(closest)
+"""
+
+#Practice = 103
+#Find the first repeated number
+"""
+numbers = [5, 3, 8, 2, 3, 9, 8]
+seen = []
+for num in numbers:
+    if num in seen:
+        print(num)
+        break
+    else:
+        seen.append(num)
+"""
+
+#Practice - 104
+#Count how many numbers are greater than the previous number
+"""
+numbers = [3, 5, 4, 8, 10, 7, 12]
+count = 0
+for i in range(1, len(numbers)):
+    if numbers[i] > numbers[i-1]:
+        count+=1
+print(count)
+"""
+
+#Practice - 105
+#Find the longest consecutive increasing sequence
+"""
+numbers = [1, 2, 3, 2, 4, 5, 6, 1]
+current = 1
+longest = 1
+for i in range(1, len(numbers)):
+    if numbers[i] > numbers[i-1]:
+        current+=1
+    else:
+        current=1
+    if current > longest:
+        longest = current
+print(longest)
+"""
