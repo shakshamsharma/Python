@@ -1257,3 +1257,211 @@ for i in range(1, len(numbers)):
         longest = current
 print(longest)
 """
+
+#Practice - 106
+#Find the largest number that appears only once
+"""
+numbers = [4, 7, 2, 7, 9, 4, 5, 2, 8]
+largest = None
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+for num in numbers:
+    if frequency[num]==1 and(largest is None or num>largest):
+        largest = num
+print(largest)
+"""
+
+#Practice - 107
+#Find the smallest number that appears more than once
+"""
+numbers = [8, 3, 5, 3, 9, 8, 2, 5, 1]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+smallest = None
+for num in numbers:
+    if frequency[num]>1 and (smallest is None or num < smallest ):
+        smallest = num
+print(smallest)
+"""
+
+#Practice - 108
+#Find the first number that appears exactly twice
+"""
+numbers = [5, 3, 8, 3, 2, 5, 9, 8, 8]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+for num in numbers:
+    if frequency[num]==2:
+        print(num)
+        break
+"""
+
+#Practice - 109
+#Find the first character with the highest frequency.
+"""
+text = "programming"
+frequency = {}
+for char in text:
+    if char in frequency:
+        frequency[char]+=1
+    else:
+        frequency[char]=1
+highest_count = 0
+most_frequent = None
+for char in text:
+    if frequency[char]>highest_count:
+        highest_count=frequency[char]
+        most_frequent=char
+print(most_frequent)
+"""
+
+#Practice - 110
+#Find the longest word that contains no vowels
+"""
+words = ["gym", "strength", "power", "rhythm", "training"]
+longest_vowel = ""
+for word in words:
+    has_vowel = False
+    for char in word:
+        if char in 'aeiouAeiou':
+            has_vowel = True
+            break
+    if not has_vowel and len(word)>len(longest_vowel):
+        longest_vowel=word
+print(longest_vowel)
+"""
+
+#Practice - 111
+#Find the first character that appears only once
+"""
+text = "aabbcdde"
+frequency = {}
+for char in text:
+    if char in frequency:
+        frequency[char]+=1
+    else:
+        frequency[char]=1
+for char in text:
+    if frequency[char]==1:
+        print(char)
+        break
+"""
+
+#Practice - 112
+#Find all numbers that appear exactly once
+"""
+numbers = [4, 7, 2, 7, 9, 4, 5, 2, 8, 6]
+frequency = {}
+result = []
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+for num in numbers:
+    if frequency[num]==1:
+        result.append(num)
+print(result)
+"""
+
+#Practice - 113
+#Find the longest consecutive sequence of equal numbers
+"""
+numbers = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5, 5]
+current = 1
+longest = 1
+for i in range(1, len(numbers)):
+    if numbers[i] == numbers[i-1]:
+        current+=1
+    else:
+        current =1
+    if current > longest:
+        longest = current
+print(longest)
+"""
+
+
+#Practice - 114
+#Find the number with the second highest frequency
+"""
+numbers = [1, 2, 2, 3, 3, 3, 4, 4]
+
+frequency = {}
+
+# Pass 1: Count frequency of each number
+for num in numbers:
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+
+highest = 0
+highest_number = None
+
+second_highest = 0
+second_number = None
+
+# Pass 2: Find highest and second-highest frequency
+for num in frequency:
+
+    count = frequency[num]
+
+    if count > highest:
+        # Old highest becomes second-highest
+        second_highest = highest
+        second_number = highest_number
+
+        # Current number becomes highest
+        highest = count
+        highest_number = num
+
+    elif count > second_highest:
+        second_highest = count
+        second_number = num
+
+    elif count == second_highest:
+        # If tied, choose the smaller number
+        if second_number is None or num < second_number:
+            second_number = num
+
+print(second_number)
+"""
+
+#Practice - 115
+#Find the longest word with no repeated characters
+"""
+words = ["cat", "apple", "banana", "world", "python"]
+
+longest = ""
+
+for word in words:
+
+    seen = []
+    has_duplicate = False
+
+    for char in word:
+
+        if char in seen:
+            has_duplicate = True
+            break
+
+        else:
+            seen.append(char)
+
+    if not has_duplicate and len(word) > len(longest):
+        longest = word
+
+print(longest)
+"""
