@@ -1465,3 +1465,178 @@ for word in words:
 
 print(longest)
 """
+
+#Practice - 116
+#Find the second smallest distinct number
+"""
+numbers = [8, 3, 5, 1, 3, 7, 1, 4]
+result = []
+for num in numbers:
+    if num not in result:
+        result.append(num)
+smallest = result[0]
+second_smallest = None
+for num in result:
+    if num < smallest:
+        second_smallest = smallest
+        smallest = num
+    elif second_smallest is None or num < second_smallest:
+        second_smallest = num
+print(second_smallest)
+"""
+
+#Practice - 117
+#Second Smallest Number
+"""
+numbers = [8, 3, 5, 1, 7, 4]
+smallest = numbers[0]
+second_smallest = None
+for num in numbers:
+    if num < smallest:
+        second_smallest = smallest
+        smallest = num
+    elif second_smallest is None or num < second_smallest:
+        second_smallest = num
+print(second_smallest)
+"""
+
+#Practice - 118
+#Find the first number that is greater than every number before it
+"""
+numbers = [3, 5, 2, 8, 6, 10, 4, 12]
+largest = numbers[0]
+for i in range(1,len(numbers)):
+    if numbers[i]>largest:
+        print(numbers[i])
+        break
+"""
+
+#Practice - 119
+#Find the first number that appears more than once.
+"""
+numbers = [4, 7, 2, 9, 7, 5, 2, 8]
+seen = []
+for num in numbers:
+    if num in seen:
+        print(num)
+        break
+    else:
+         seen.append(num)
+"""
+
+#Practice - 120
+#Find the largest number that appears more than once.
+"""
+numbers = [4, 7, 2, 7, 9, 4, 5, 2, 8, 7]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+largest = None
+for num in numbers:
+    if frequency[num]>1:
+        if largest is None or num > largest:
+            largest = num
+print(num)
+"""
+
+#Practice - 121
+#Find the smallest number that appears exactly once.
+"""
+numbers = [8, 3, 5, 3, 9, 8, 2, 5, 1]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+smallest = None
+for num in numbers:
+    if frequency[num]==1:
+        if smallest is None or num < smallest:
+            smallest = num
+print(smallest)
+"""
+
+#Practice - 122
+#Find the first number that is smaller than every number before it.
+"""
+numbers = [10, 7, 8, 5, 6, 3, 4]
+smallest = numbers[0]
+for i in range(1, len(numbers)):
+    if numbers[i]<smallest:
+        print(numbers[i])
+        break
+"""
+
+
+#Practice - 123
+#Find the largest number that appears exactly once.
+"""
+numbers = [4, 7, 2, 7, 9, 4, 5, 2, 8]
+frequency = {}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+largest = None
+for num in numbers:
+    if frequency[num]==1:
+        if largest is None or num > largest:
+            largest = num
+print(largest)
+"""
+
+#Practice - 124
+#Find the first number whose frequency is greater than 2.
+"""
+numbers = [4, 2, 7, 2, 4, 7, 7, 9, 4]
+frequency={}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+for num in numbers:
+    if frequency[num]>2:
+        print(num)
+        break
+"""
+
+#Practice - 125
+#Find the smallest number whose frequency is greater than 1.
+"""
+numbers = [8, 3, 5, 3, 9, 8, 2, 5, 1]
+frequency={}
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+smallest = None
+for num in numbers:
+    if frequency[num]>1:
+        if smallest is None or num < smallest:
+            smallest = num
+print(smallest)
+"""
+
+
+#Practice - 126
+#Find the longest consecutive sequence of the same number.
+"""
+numbers = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5, 5, 2]
+current = 1
+longest = 1
+for i in range(1,len(numbers)):
+    if numbers[i]==numbers[i-1]:
+        current+=1
+    else:
+        current=1
+    if current > longest:
+        longest = current
+print(longest)
+"""
