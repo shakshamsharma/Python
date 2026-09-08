@@ -1640,3 +1640,104 @@ for i in range(1,len(numbers)):
         longest = current
 print(longest)
 """
+
+#Functions
+#Practice - 1
+"""
+def calculate_area(a,b):
+    return a*b
+area = calculate_area(10,5)
+print(area)
+"""
+
+#Practice - 2
+"""
+def calculate_average(a,b,c):
+    return (a+b+c)/3
+average = calculate_average(10,20,30)
+print(average)
+"""
+
+#Practice - 3
+"""
+def is_even(num):
+    return num%2==0
+print(is_even(3))
+"""
+
+#Practice - 4
+"""
+def get_largest(a,b,c):
+    largest = a
+    if b > largest:
+        largest = b
+    if c > largest:
+        largest = c
+    return largest
+print(get_largest(10,25,17))
+"""
+
+#Practice - 5
+"""
+def count_vowels(vowels):
+    count = 0
+    for vowel in vowels:
+        if vowel in 'aeoiuAEIOU':
+            count+=1
+    return count
+print(count_vowels("Programming"))
+"""
+
+#Practice - 6
+"""
+def count_positive(numbers):
+    count = 0
+    for num in numbers:
+        if num > 0:
+            count+=1
+    return count
+print(count_positive([-2, 5, 7, -1, 0, 3]))
+"""
+
+#Practice - 7
+"""
+def find_first_even(numbers):
+    for num in numbers:
+        if num%2==0:
+            return num
+            break
+print(find_first_even([3, 7, 9, 12, 5, 8]))
+"""
+
+#Practice - 8
+"""
+def remove_negatives(numbers):
+    result = []
+    for num in numbers:
+        if num < 0:
+            result.append(num)
+    return result
+print(remove_negatives([-3, 5, -1, 8, 0, -7, 4]))
+"""
+
+#Practice - 9
+"""
+def get_longest_word(word):
+    longest = ""
+    for char in word:
+        if len(char)>len(longest):
+            longest = char
+    return longest
+print(get_longest_word(["cat", "elephant", "dog", "tiger"]))
+"""
+
+
+#Practice - 10
+"""
+def calculate_total(numbers):
+    total = 0
+    for num in numbers:
+        total = total + num
+    return total
+print(calculate_total([10, 20, 5, 15]))
+"""
