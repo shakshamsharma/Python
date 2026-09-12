@@ -1741,3 +1741,70 @@ def calculate_total(numbers):
     return total
 print(calculate_total([10, 20, 5, 15]))
 """
+
+#Practice - 11 - Default Parameters
+"""
+def greet(name, message="Hello"):
+    return message+ " " +name
+print(greet("Saksham"))
+print(greet("Saksham","Good morning"))
+"""
+
+#Practice - 12
+"""
+def calculate_price(price, tax=0.18):
+    return price+(price*tax)
+print(calculate_price(100))
+"""
+
+#Practice - 13 
+#Keyword Arguments
+#My name is Saksham, I am 22 years old, and I live in Palampur.
+"""
+def introduce(name, age, city):
+    return "my name is "+name+", I am " +str(age)+ " years old, and I live in "+ city
+print(introduce(name="Saksham",age=22,city="Palampur"))
+"""
+
+#Practice - 14
+"""
+def calculate(a,b):
+    sum = a+b
+    difference = a-b
+    return sum, difference
+print(calculate(10,4))
+"""
+
+#Practice - 15
+"""
+def get_min_max(numbers):
+    smallest = numbers[0]
+    largest = numbers[0]
+    for num in numbers:
+        if num < smallest:
+            smallest = num
+        if num > largest:
+            largest = num
+    return smallest, largest
+print(get_min_max([8, 3, 10, 2, 7]))
+"""
+
+#Practice - 16
+"""
+def sum_of_square(a,b):
+    square1 = a*a
+    square2 = b*b
+    return square1 + square2
+print(sum_of_square(3,4))
+"""
+
+#Practice - 17
+"""
+def is_even(numbers):
+    count_even = 0
+    for num in numbers:
+        if num%2==0:
+            count_even+=1
+    return count_even
+print(is_even([1, 2, 4, 7, 8, 9]))
+"""
