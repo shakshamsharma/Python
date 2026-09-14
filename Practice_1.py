@@ -1808,3 +1808,70 @@ def is_even(numbers):
     return count_even
 print(is_even([1, 2, 4, 7, 8, 9]))
 """
+
+#Practice - 18
+"""
+def is_even(num):
+    return num%2==0
+def count_even(numbers):
+    count=0
+    for num in numbers:
+        if is_even(num):
+            count+=1
+    return count
+print(count_even([1,2,3,4,5,6]))
+"""
+
+#Practice - 19
+"""
+def is_postive(num):
+    return num>0
+def count_positive(numbers):
+    count=0
+    for num in numbers:
+        if is_postive(num):
+            count+=1
+    return count
+print(count_positive([1,-2,3,-4,5,6]))
+"""
+
+#Practice - 20
+"""
+def get_even_numbers(numbers):
+    result = []
+    for num in numbers:
+        if num%2==0:
+            result.append(num)
+    return result
+print(get_even_numbers([1,2,3,4,5,6]))
+"""
+
+#Practice - 21
+"""
+def is_even(num):
+    return num%2==0
+def get_even_numbers(numbers):
+    result = []
+    for num in numbers:
+        if is_even(num):
+            result.append(num)
+    return result
+print(get_even_numbers([1,2,3,4,5,6]))
+"""
+
+#Practice - 22
+"""
+def get_numbers_above_average(numbers):
+    total = 0
+    for num in numbers:
+        total = total + num
+    average = total/len(numbers)
+    result = []
+    for num in numbers:
+        if num > average:
+            result.append(num)
+    return result
+print(get_numbers_above_average([10, 20, 30, 40, 50]))
+"""
+
+#Practice - 23
