@@ -1875,3 +1875,71 @@ print(get_numbers_above_average([10, 20, 30, 40, 50]))
 """
 
 #Practice - 23
+"""
+def calculate_bill(price, quality, discount=0):
+    total=price*quality
+    final_amount = total - discount
+    return final_amount
+print(calculate_bill(10,2,2))
+"""
+
+#*args
+##Practice - 24
+"""
+def add_number(*args):
+    total = 0
+    for num in args:
+        total+=num
+    return total
+print(add_number(10,5,15))
+"""
+
+#Practice - 25
+"""
+def find_largest(*args):
+    largest = args[0]
+    for num in args:
+        if num > largest:
+            largest = num
+    return largest
+print(find_largest(2,4,3,7))
+"""
+
+#**kwargs
+#Practice - 26
+"""
+def print_details(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":" ,value)
+print_details(name="Saksham", age=22, city="Palampur")
+"""
+
+#Practice - 27
+"""
+def get_age(**kwargs):
+    return kwargs["age"]
+print(get_age(name="Saksham", age=22, city="Palampur"))
+"""
+
+#Practice - 28
+"""
+def show_info(*args, **kwargs):
+    for item in args:
+        print(args)
+    for key, value in kwargs.items():
+        print(key, ":" ,value)
+show_info("Python", "AWS", name="Saksham", age=22)
+"""
+
+#Practice - 29
+"""
+def calculate_average(*args):
+    total = 0
+    for num in args:
+        total = total+num
+    return total/len(args)
+print(calculate_average(10,20,30))
+"""
+
+#Practice - 30
+
