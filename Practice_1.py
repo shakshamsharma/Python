@@ -1942,4 +1942,109 @@ print(calculate_average(10,20,30))
 """
 
 #Practice - 30
+"""
+x = 10 
+def test():
+    x = 20
+    def inner():
+        x = 30
+        print(x)
+    inner()
+    print(x)
+test()
+print(x)
+"""
 
+#Practice - 31
+"""
+x = 10
+def test():
+    x = 20
+    def inner():
+        print(x)
+    inner()
+test()
+print(x)
+"""
+
+#Practice - 32
+"""
+x = 10
+def test():
+    x = 20
+test()
+print(x)
+"""
+
+#Practice - 33
+"""
+numbers = [1, 2, 3, 4, 5, 6]
+result = []
+for num in numbers:
+    square = num*num
+    result.append(square)
+print(result)
+"""
+
+#Practice - 34
+"""
+numbers = [1, 2, 3, 4, 5, 6]
+result = [num*num for num in numbers]
+print(result)
+"""
+
+#Practice - 35
+"""
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+result = [num for num in numbers if num%2==0]
+print(result)
+"""
+
+#Practice - 36
+"""
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+result = [num*num for num in numbers if num%2==0]
+print(result)
+"""
+
+#Practice - 37
+"""
+words = ["cat", "elephant", "dog", "tiger", "ox"]
+result = [char for char in words if len(char)>3]
+print(result)
+"""
+
+#Practice - 38
+"""
+numbers = [1, 2, 3, 4, 5, 6]
+result = [num*2 if num%2==0 else num*3 for num in numbers]
+print(result)
+"""
+
+#Practice - 39
+"""
+numbers = [1, 2, 3, 4, 5]
+result = {num: num*num for num in numbers}
+print(result)
+"""
+
+#Practice - 40
+"""
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+result = {num: num*num for num in numbers if num%2==0}
+print(result)
+"""
+
+#Practice - 41
+"""
+words = ["cat", "apple", "dog", "banana"]
+result = {word: len(word) for word in words}
+print(result)
+"""
+
+#Practice - 42
+"""
+words = ["cat", "elephant", "dog", "banana", "ox", "tiger"]
+result = {word: len(word) for word in words if len(word) > 3}
+print(result)
+"""
