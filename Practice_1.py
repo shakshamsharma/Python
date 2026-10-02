@@ -2048,3 +2048,111 @@ words = ["cat", "elephant", "dog", "banana", "ox", "tiger"]
 result = {word: len(word) for word in words if len(word) > 3}
 print(result)
 """
+
+#Practice - 43
+"""
+numbers = [1,2,2,4,5,6,6,9]
+unique = set(numbers)
+print(unique)
+"""
+
+#Practice - 44
+"""
+numbers = [4, 7, 2, 7, 9, 4, 5, 2, 8]
+unique = set(numbers)
+print(unique)
+"""
+
+#Practice - 45
+"""
+a = {1, 2, 3, 4, 5}
+b = {4, 5, 6, 7, 8}
+unique = set(a&b)
+print(unique)
+"""
+
+#Practice - 46
+"""
+a = {1, 2, 3, 4, 5}
+b = {4, 5, 6, 7, 8}
+result = set(a-b)
+print(result)
+"""
+
+#Practice - 47
+"""
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+result = a | b
+print(result)
+"""
+
+#Practice - 48
+"""
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+result = set(a^b)
+print(result)
+"""
+
+#Practice - 49
+"""
+text = "programming"
+result = set(text)
+print(result)
+"""
+
+#Practice - 50
+"""
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+set1 = set(list1)
+set2 = set(list2)
+result = set1&set2
+print(result)
+"""
+
+#Practice - 51
+"""
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+set1 = set(list1)
+set2 = set(list2)
+result = set1-set2
+print(result)
+"""
+
+#Practice - 52
+"""
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+set1 = set(list1)
+set2 = set(list2)
+result = set1^set2
+print(result)
+"""
+
+#Practice - 53
+"""
+numbers = (10, 20, 30, 40)
+number = numbers[0]=100
+print(number)
+"""
+
+#Practice - 54
+"""
+person = ("Saksham", 22, "Palampur")
+result = person[0]
+result1 = person[1]
+result2 = person[2]
+print(result)
+print(result1)
+print(result2)
+"""
+
+#Practice - 55
+person = ("Saksham", 22, "Palampur")
+name, age, city = person
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
